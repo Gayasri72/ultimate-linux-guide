@@ -7,10 +7,16 @@ A process is an instance of a running program. Linux provides multiple utilities
 
 ### Viewing Processes
 - `ps aux` – View all running processes
+- `ps`-Processes associated with current terminal session
+- `ps aux| nl`-count of runnning processes
+- `ps aux| wc -l`-count of running processes
+- `ps ef`-view all running  processes
+- The difference between aux and -ef is that aux give cpu and memory results
 - `ps -u username` – View processes for a specific user
 - `ps -C processname` – Show a process by name
 - `pgrep processname` – Find a process by name and return its PID
 - `pidof processname` – Find the PID of a running program
+- `ps aux| grep word`-filter the process from a word
 
 ### Managing Processes
 - `kill PID` – Terminate a process by PID
